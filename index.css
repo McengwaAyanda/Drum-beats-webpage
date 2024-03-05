@@ -25,13 +25,31 @@ body {
     font-weight: 500;
 }
 .navbar{
-    text-align: right;
+    text-align: center;
     padding: 10px;
-    color: chartreuse;
+    color: whitesmoke;
+    background-color: chartreuse;
+    justify-content: space-evenly;
+    justify-items: center;
 }
 .pictures{
     background-color: transparent;
     display: flexbox;
-    padding: 15px;
-    margin: 10px;
+    padding: 10px;
+    margin: 5px 5px 5px 5px;
+    text-align: center;
+}
+.btn {
+    position:absolute;
+    color: black;
+    font-size: 16px;
+    padding: 12px 12px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 3px solid black;
+    text-align: center;
+}
+.btn:hover{
+    background-color: black;
+    color: chartreuse ;
 }
