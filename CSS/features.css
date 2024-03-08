@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300,400,500,600,700,800,900& display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins, sans-serif;
+}
+body {
+    background-image: url("/Images/beat-audio-bg.jpg") no-repeat;
+    width: 100%;
+    height: 100%;
+    color: black;
+    background-position: center;
+    background-size: cover;
+    padding: 10px 10px;
+    display: grid;
+}
+.header{
+    width: 100%;
+    
+}
+.header a{
+    color: black ;
+    font-size: bold;
+    font-weight: 500;
+    text-decoration: none;
+    justify-content: space-between;
+    padding: 10px;
+}
+.navbar{
+    text-align: center;
+    padding: 5px;
+    color: black;
+    background-color: transparent;
+    justify-content: space-evenly;
+    justify-items: center;
+    text-decoration: none;
+    font-size: 30px
+}
+.pictures{
+    background-color: transparent;
+    display: flexbox;
+    padding: 10px;
+    margin: 5px 5px 5px 5px;
+    text-align: center;
+    color: red;
+}
+.pictures h2{
+    padding: 10px;
+}
+.btn {
+    border: 0;
+    background: #111;
+    color: #fff;
+    padding: 0.68em;
+    width: 140px;
+    border-radius: 14px;
+    font-weight: bold;
+}
+  
+.btn:hover {
+    opacity: 0.8;
+  } 
+.social-icons{
+    bottom: 0rem;
+    width: 170px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 38rem;
+}
+.social-icons a {
+    padding: 0rem;
+    text-decoration: none;
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    border-spacing: 1rem;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border: 2px solid black;
+    border-radius: 50%;
+    font-size: 20px;
+    color:black ;
+    z-index: 1;
+    transition: 0.4s;
+}
+.social-icons a:hover{
+    background-color: red;
+}
+.social-icons a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    width: 0;
+    height: 100%;
+    background: red;
+    z-index: -1;
+    transition: 0.4s;
+}

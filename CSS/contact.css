@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300,400,500,600,700,800,900& display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins, sans-serif;
+}
+body {
+    background-image: url("/Images/beat-audio-bg.jpg") no-repeat;
+    width: 100%;
+    height: 100%;
+    color: black;
+    background-position: center;
+    background-size: cover;
+    padding: 10px 10px;
+    display: grid;
+}
+.header{
+    width: 100%;
+}
+.header a{
+    color: black ;
+    font-size: bold;
+    font-weight: 500;
+    text-decoration: none;
+    justify-content: space-between;
+    padding: 10px;
+}
+.navbar{
+    text-align: center;
+    padding: 5px;
+    color: red;
+    background-color: transparent;
+    justify-content: space-evenly;
+    justify-items: center;
+    font-size: 30px
+}
+
+.form-container {
+  width: 100%;
+  height: 650px;
+  background: linear-gradient(red) padding-box,
+  linear-gradient(145deg, transparent 35%, red) border-box;
+  border: 2px solid transparent;
+  padding: 32px 24px;
+  font-size: 14px;
+  font-family: inherit;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  box-sizing: border-box;
+  border-radius: 16px;
+}
+
+.form-container button:active {
+  scale: 0.95;
+}
+
+.form-container .form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-container .form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.form-container .form-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: black;
+  font-weight: 600;
+  font-size: 16px;
+  text-align: center;
+}
+
+.form-container .form-group input {
+  width: 100%;
+  padding: 12px 16px;
+  border-radius: 8px;
+  color: #fff;
+  font-family: inherit;
+  background-color: transparent;
+  border: 1px solid red;
+}
+
+.form-container .form-group textarea {
+  width: 100%;
+  padding: 12px 16px;
+  border-radius: 8px;
+  resize: none;
+  color: #fff;
+  height: 96px;
+  border: 1px solid red;
+  background-color: transparent;
+  font-family: inherit;
+}
+
+.form-container .form-group input::placeholder {
+  opacity: 0.5;
+}
+
+.form-container .form-group input:focus {
+  outline: none;
+  border-color: red;
+}
+
+.form-container .form-group textarea:focus {
+  outline: none;
+  border-color: red;
+}
+
+.form-container .form-submit-btn {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  align-self: flex-start;
+  font-family: inherit;
+  color: black;
+  font-weight: 500;
+  width: 40%;
+  background: transparent;
+  border: 1px solid red;
+  padding: 12px 16px;
+  font-size: 16px;
+  gap: 8px;
+  margin-top: 8px;
+  cursor: pointer;
+  border-radius: 14px;
+  
+}
+
+.form-container .form-submit-btn:hover {
+  background-color: red;
+  border-color: black;
+}
+  .social-icons{
+    bottom: 0rem;
+    margin-top: 5px;
+    width: 170px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 40rem;
+}
+.social-icons a {
+    padding: 0rem;
+    text-decoration: none;
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    border-spacing: 1rem;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border: 2px solid black;
+    border-radius: 50%;
+    font-size: 20px;
+    color:black ;
+    z-index: 1;
+    transition: 0.4s;
+}
+.social-icons a:hover{
+    background-color: red;
+}
+.social-icons a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    width: 0;
+    height: 100%;
+    background: red;
+    z-index: -1;
+    transition: 0.4s;
+}
