@@ -39,11 +39,46 @@
         </div>
        
     </div>
+    <section class="pictures">
+        <div class="pictures">
+            <h2 style="text-align: center; font-size: 50px;">Airpods</h2><br>
+            <div class="button1">
+                <img src="/Images/images (1).jpeg" alt=""  height="450px" width="450px">
+                <button class="btn">see details</button>
+            </div>
+            <div class="button2">
+                <img src="/Images/71GlvLEk4ML._AC_UF894,1000_QL80_.jpg" alt="" height="450px" width="450px">
+                <button class="btn">see details</button>
+            </div>
+            
+            <div class="button3">
+                <img src="/Images/OIP.jpeg" alt=""  height="450px" width="450px">
+                <button class="btn">see details</button>
+            </div>
+            
+            <div class="button4">
+                <img src="Images/jbl_jblt700btcoram_tune_700bt_wireless_over_ear_1557211.jpg" alt=""  height="450px" width="450px">
+                <button onclick="showDetails()" class="btn">see details</button>
+            </div>
+           
+        </div>
     <div class="social-icons">
         <a href="www.facebook.com"><i class='bx bxl-facebook' ></i></a>
         <a href=""><i class='bx bxl-twitter' ></i></a>
         <a href=""><i class='bx bxl-instagram' ></i></a>
       </div>
 </section>  
+<script>
+    const showDetails = document.querySelector(btn);
+    function showDetails(){
+        if (showDetails.classname == 'open'){
+            showDetails.classname = "";
+            btn.classname = 'show-details';
+        }else{
+            showDetails.classname = 'open';
+            btn.classname = 'hide-details';
+        }
+    }
+</script>
 </body>
 </html>
