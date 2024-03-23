@@ -37,7 +37,7 @@ body {
     text-decoration: none;
     font-size: 30px
 }
-.pictures{
+.headphones, .Airpods{
     background-color: transparent;
     display: flexbox;
     padding: 10px;

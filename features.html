@@ -16,31 +16,35 @@
         </nav>
     </header>
 
-    <section class="pictures">
-    <div class="pictures">
+    <section class="headphones">
+    <div class="headphones">
         <h2 style="text-align: center; font-size: 50px;">Products</h2><br>
         <div class="button1">
             <img src="Images/beats_by_dr_dre_900_00108_01_studio_wireless_headphones_white_1016366.jpg" alt=""  height="450px" width="450px">
             <button class="btn">see details</button>
-        </div>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad blanditiis modi nesciunt, ducimus temporibus eaque corrupti? Expedita in dolor officia pariatur. Possimus laborum, ipsum quos praesentium consectetur iste quisquam vitae?</p>
+            </div class="p">
         <div class="button2">
             <img src="Images/beats_by_dr_dre_mrq82ll_a_studio3_wireless_bluetooth_headphones_1407140.jpg" alt="" height="450px" width="450px">
             <button class="btn">see details</button>
-        </div>
+            <p class="p">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum ex porro quis. Tempora eveniet aut inventore itaque dignissimos voluptatibus quidem, molestiae, exercitationem et vero qui soluta dicta. Non, officiis similique.</p>
+            </div>
         
         <div class="button3">
             <img src="Images/jbl_jblt450btblu_tune_450bt_on_ear_wireless_1418755.jpg" alt=""  height="450px" width="450px">
             <button class="btn">see details</button>
+            <p class="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti quos sit ipsum ratione facere numquam aspernatur quasi praesentium quo repudiandae hic accusamus explicabo, dolor at amet soluta tenetur? Accusantium, nobis!</p>
         </div>
         
         <div class="button4">
             <img src="Images/jbl_jblt700btcoram_tune_700bt_wireless_over_ear_1557211.jpg" alt=""  height="450px" width="450px">
             <button class="btn">see details</button>
+            <p class="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, atque repudiandae! Iste corporis voluptas voluptates perferendis dolorem aspernatur a, alias cum deleniti molestiae est cumque aliquam dolores, ratione laborum reiciendis.</p>
         </div>
        
     </div>
-    <section class="pictures">
-        <div class="pictures">
+
+        <div class="airpods">
             <h2 style="text-align: center; font-size: 50px;">Airpods</h2><br>
             <div class="button1">
                 <img src="/Images/images (1).jpeg" alt=""  height="450px" width="450px">
@@ -69,15 +73,17 @@
       </div>
 </section>  
 <script>
-    const showDetails = document.querySelector(btn);
-    function showDetails(){
-        if (showDetails.classname == 'open'){
-            showDetails.classname = "";
-            btn.classname = 'show-details';
-        }else{
-            showDetails.classname = 'open';
-            btn.classname = 'hide-details';
-        }
+    var p = document.getElementsByClassName("p");
+    var display = 0;
+
+    function hideshow() {
+    if(display == 1) {  
+        p.style.display = "block";
+        display = 0;
+    }
+    else{
+        p.style.display = "none";
+        display = 1;
     }
 </script>
 </body>
