@@ -15,25 +15,59 @@ body {
     padding: 10px 10px;
     display: grid;
 }
-.header{
-    width: 100%;
+nav {
+  height: 3rem;
+  background-color: #222;
+  width: 100%;
+  border-radius: 5px;
 }
-.header a{
-    color: black ;
-    font-size: bold;
-    font-weight: 500;
-    text-decoration: none;
-    justify-content: space-between;
-    padding: 10px;
+
+ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 10px;
 }
-.navbar{
-    text-align: center;
-    padding: 5px;
-    color: red;
-    background-color: transparent;
-    justify-content: space-evenly;
-    justify-items: center;
-    font-size: 30px
+
+a {
+  font-family: Poppins;
+  font-size: 24px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.link {
+  position: relative;
+  list-style: none;
+  padding: 4px 0;
+}
+
+.link::after,
+.link::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: #fff;
+  transition: all 0.6s ease-in-out;
+}
+
+.link::after {
+  top: 0;
+  right: 0;
+  transform-origin: right;
+
+}
+
+.link::before {
+  left: 0;
+  bottom: 0;
+  transform-origin: left;
+}
+
+.link:hover::after,
+.link:hover::before {
+  width: 100%;
 }
 
 .form-container {
@@ -45,6 +79,7 @@ body {
   padding: 32px 24px;
   font-size: 14px;
   font-family: inherit;
+  text-align: center;
   color: white;
   display: flex;
   flex-direction: column;
@@ -52,11 +87,6 @@ body {
   box-sizing: border-box;
   border-radius: 16px;
 }
-
-.form-container button:active {
-  scale: 0.95;
-}
-
 .form-container .form {
   display: flex;
   flex-direction: column;
@@ -126,7 +156,7 @@ body {
   font-family: inherit;
   color: black;
   font-weight: 500;
-  width: 40%;
+  width: 30%;
   background: transparent;
   border: 1px solid red;
   padding: 12px 16px;
