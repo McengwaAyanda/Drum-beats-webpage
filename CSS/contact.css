@@ -6,13 +6,12 @@
     font-family: Poppins, sans-serif;
 }
 body {
-    background-image: url("/Images/beat-audio-bg.jpg") no-repeat;
     width: 100%;
     height: 100%;
     color: black;
     background-position: center;
     background-size: cover;
-    padding: 10px 10px;
+    padding: 10px;
     display: grid;
 }
 nav {
@@ -71,14 +70,15 @@ a {
 }
 
 .form-container {
-  width: 100%;
-  height: 650px;
-  background: linear-gradient(red) padding-box,
-  linear-gradient(145deg, transparent 35%, red) border-box;
-  border: 2px solid transparent;
-  padding: 32px 24px;
+  width: 80%;
+  height: 700px;
+  border: 2px solid black;
+  margin-top: 10px;
+  margin-left: 10%;
+  padding: 32px;
   font-size: 14px;
   font-family: inherit;
+  background-color: #222;
   text-align: center;
   color: white;
   display: flex;
@@ -103,7 +103,7 @@ a {
 .form-container .form-group label {
   display: block;
   margin-bottom: 5px;
-  color: black;
+  color: #fff;
   font-weight: 600;
   font-size: 16px;
   text-align: center;
@@ -116,6 +116,7 @@ a {
   padding: 12px 16px;
   border-radius: 8px;
   color: #fff;
+  background-color: #fff;
   font-family: inherit;
   background-color: transparent;
   border: 1px solid red;
