@@ -6,9 +6,8 @@
     font-family: Poppins, sans-serif;
 }
 body {
-    background-image: url("/Images/beat-audio-bg.jpg") no-repeat;
     width: 100%;
-    height: 100%;
+    height: fit-content;
     color: black;
     background-position: center;
     background-size: cover;
@@ -69,30 +68,6 @@ a {
 .link:hover::before {
     width: 100%;
 }
-.headphones, .Airpods{
-    background-color: transparent;
-    display: flexbox;
-    padding: 10px;
-    margin: 5px 5px 5px 5px;
-    text-align: center;
-    color: red;
-}
-.pictures h2{
-    padding: 10px;
-}
-.btn {
-    border: 0;
-    background: #111;
-    color: #fff;
-    padding: 0.68em;
-    width: 140px;
-    border-radius: 14px;
-    font-weight: bold;
-}
-  
-.btn:hover {
-    opacity: 0.8;
-  } 
 .social-icons{
     bottom: 0rem;
     width: 170px;
@@ -136,23 +111,25 @@ a {
 }
 
 .wrapper {
-    display: flex;
-	width: 90%;
-	justify-content: space-around;
+  display: grid;
+	width: 100%;
+  padding: 10px;
+  justify-content: space-evenly;
 }
 
 .card {
-    width: 280px;
-    height: 360px;
+    width: 500px;
+    height: 500px;
     border: solid 3px #272727;
     border-radius: 19px;
-    padding: 1.5rem;
+    padding: 2rem;
     background: white;
     position: relative;
     display: flex;
     align-items: flex-end;
     transition: 0.4s ease-out;
     box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+    justify-content: space-between
 }
   
 .card:hover {
