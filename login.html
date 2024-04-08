@@ -8,71 +8,31 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-
-<!-- BACKGROUND-WRAPPER -->
-<main class="background_wrapper">
-  <div class="login_form_wrapper">
-    <!-- FORM -->
-    <form action="#" class="login__form">
-      <h1 class="title">Login</h1>
-
-      <div class="login_form_content">
-        <!-- LOGIN-CONTENT-BOX-1 -->
-        <div class="login_content_box">
-          <ion-icon name="person-outline"></ion-icon>
-
-          <div class="login_content_box--input">
-            <input
-              type="email"
-              placeholder=" "
-              class="login__input email--input"
-              required
-            />
-            <label for="email" class="login__label">Email</label>
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <h2>Login</h2>
+        <form id="login-form">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required>
+          <div class="form-footer">
+            <div class="remember-me">
+              <input type="checkbox" id="remember-me" name="remember-me">
+              <label for="remember-me">Remember me</label>
+            </div>
+            <a href="#" class="forgot-password">Forgot password?</a>
           </div>
-        </div>
-        <!-- LOGIN-CONTENT-BOX-2 -->
-        <div class="login_content_box">
-          <ion-icon name="lock-closed-outline"></ion-icon>
-
-          <div class="login_content_box--input">
-            <input
-              type="password"
-              placeholder=" "
-              class="login__input password--input"
-              required
-            />
-            <label for="password" class="login__label">Password</label>
-            <ion-icon
-              class="password__hidden"
-              id="password_hidden"
-              name="eye-off-outline"
-            ></ion-icon>
-          </div>
-        </div>
-        <!-- REMEMBER-LOGIN -->
-        <div class="remember_login">
-          <div class="remember_login_content">
-            <input type="checkbox" class="remember_login_input" />
-            <label for="remember" class="remember_login_label text--sm"
-              >Remember me</label
-            >
-          </div>
-          <!-- FORGET PASSWORD -->
-          <a href="#" class="forget__login text--sm">Forget password?</a>
-        </div>
-
-        <!-- LOGIN BUTTON -->
-        <button class="button__login">Login</button>
-        <!-- REGISTER LOGIN -->
-        <p class="register__login text--sm">
-          Don't have an account ? <a href="#">Register</a>
-        </p>
+          <button type="submit">Login</button>
+        </form>
       </div>
-    </form>
+      <div class="flip-card-back">
+        <h2>Welcome Back!</h2>
+        <p>You are now logged in.</p>
+      </div>
+    </div>
   </div>
-</main>   
-<script src="script.js"></script>
-    
+<script src="login.js"></script>    
 </body>
 </html>

@@ -17,7 +17,7 @@ body {
 nav {
     height: 3rem;
     background-color: #222;
-    width: 100%;
+    width: 90%;
     border-radius: 5px;
 }
 
@@ -112,7 +112,7 @@ a {
 
 .wrapper {
   display: grid;
-	width: 100%;
+	width: 40%;
   padding: 10px;
   justify-content: space-evenly;
 }

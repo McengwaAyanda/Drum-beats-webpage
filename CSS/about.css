@@ -19,7 +19,6 @@ nav {
     height: 3rem;
     background-color: #222;
     width: 90%
-    border-radius: 5px;
 }
 
 ul {
@@ -69,3 +68,8 @@ a {
 .link:hover::before {
     width: 100%;
 }
+ul {
+    margin: 0px;
+    padding: 0px;
+}
+

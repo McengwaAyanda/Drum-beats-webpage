@@ -40,3 +40,10 @@ $('#contactME .field:nth-child(2) input').blur(function () {
       }
   });
 });
+
+function openDetailsPage() {
+  // Open a new window or tab
+  var newWindow = window.open("details.html");
+
+  newWindow.document.close();
+}
