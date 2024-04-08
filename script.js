@@ -1,40 +1,42 @@
-document.getElementById("login-form").addEventListener("submit", function(event) {
-    event.preventDefault(); // Prevent form submission
-  
-    // Get the values from the input fields
-    var username = document.getElementById("username").value;
-    var password = document.getElementById("password").value;
-  
-    // Perform validation
-    if (username === "admin" && password === "password") {
-      alert("Login successful!");
-      // Redirect to another page or perform other actions
-    } else {
-      alert("Invalid username or password. Please try again.");
-    }
+
+$('textarea').blur(function () {
+  $('#contactME textarea').each(function () {
+      $this = $(this);
+      if ( this.value != '' ) {
+        $this.addClass('focused');
+        $('textarea + label + span').css({'opacity': 1});
+      }
+      else {
+        $this.removeClass('focused');
+        $('textarea + label + span').css({'opacity': 0});
+      }
   });
+});
 
+$('#contactME .field:first-child input').blur(function () {
+  $('#contactME .field:first-child input').each(function () {
+      $this = $(this);
+      if ( this.value != '' ) {
+        $this.addClass('focused');
+        $('.field:first-child input + label + span').css({'opacity': 1});
+      }
+      else {
+        $this.removeClass('focused');
+        $('.field:first-child input + label + span').css({'opacity': 0});
+      }
+  });
+});
 
-  
-    /* PASSWORD INPUT */
-const Password_input = document.querySelector(".password--input");
-
-/* PASSWORD EYE ICON */
-const Password_eye_icon = document.querySelector("#password_hidden");
-
-/* PASSWORD EYE ICON EVENTLISTENER */
-Password_eye_icon.addEventListener("click", () => {
-  if (Password_input.type === "password") {
-    /* Checking if the password input has the 
-            type of text if so then interchange the icons */
-
-    Password_input.type = "text";
-    Password_eye_icon.setAttribute("name", "eye-outline");
-    Password_eye_icon.removeAttribute("name", "eye-off-outline");
-  } else {
-    Password_input.type = "password";
-
-    Password_eye_icon.setAttribute("name", "eye-off-outline");
-    Password_eye_icon.removeAttribute("name", "eye-outline");
-  }
+$('#contactME .field:nth-child(2) input').blur(function () {
+  $('#contactME .field:nth-child(2) input').each(function () {
+      $this = $(this);
+      if ( this.value != '' ) {
+        $this.addClass('focused');
+        $('.field:nth-child(2) input + label + span').css({'opacity': 1});
+      }
+      else {
+        $this.removeClass('focused');
+        $('.field:nth-child(2) input + label + span').css({'opacity': 0});
+      }
+  });
 });
