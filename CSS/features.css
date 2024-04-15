@@ -131,10 +131,6 @@ a {
     box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
     justify-content: space-between
 }
-  
-.card:hover {
-  transform: translateY(20px);
-}
 
 .card:before {
   content: "";
@@ -150,11 +146,6 @@ a {
   transition: 0.5s;
   opacity: 0;
 }
-
-.card:hover:before {
-  opacity: 1;
-}
-
 .card img {
   width: 50%;
   height: 500px;
@@ -173,12 +164,6 @@ a {
   transform: translateY(30px);
   transition: 0.5s;
 }
-
-.card:hover .info {
-  opacity: 1;
-  transform: translateY(0px);
-}
-
 .card .info h1 {
   margin: 0px;
 }
